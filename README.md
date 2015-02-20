@@ -8,6 +8,7 @@ Jersey JSON RESTful web service project (template)
 
 #Project Creation Steps :
 ** Assumes Maven already installed
+
 1. Create new Dynamic Web Project using maven from the console
 	- mvn archetype:create -DgroupId=RESTfulJSONDev3l -DartifactId=RESTfulJSONDev3l -DarchetypeArtifactId=maven-archetype-webapp
 
