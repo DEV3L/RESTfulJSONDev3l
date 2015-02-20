@@ -5,7 +5,7 @@ Jersey JSON RESTful web service project (template)
 
 
 
-#Usage Instructions to ull down and use template project from GitHub
+#Usage Instructions to Pull down and use template project from GitHub
 1. From command line retrieve project from GitHub
 	- git clone https://github.com/DEV3L/RESTfulJSONDev3l.git
 
