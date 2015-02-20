@@ -26,13 +26,13 @@ Jersey JSON RESTful web service project (template)
 #Project Creation Steps :
 ** Assumes Maven already installed
 
-1. Create new Dynamic Web Project using maven from the console
+- Create new Dynamic Web Project using maven from the console
 	- mvn archetype:create -DgroupId=RESTfulJSONDev3l -DartifactId=RESTfulJSONDev3l -DarchetypeArtifactId=maven-archetype-webapp
 
-2. Copy the created project to an eclipse workspace
+- Copy the created project to an eclipse workspace
 	- /Workspaces/Eclipse/Sandbox/
 
-3. Update the pom.xml
+- Update the pom.xml
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -96,20 +96,20 @@ Jersey JSON RESTful web service project (template)
 </project>
 ```
 
-4. Use Maven to resolve the dependencies and create eclipse project files
+- Use Maven to resolve the dependencies and create eclipse project files
 	- From the console within the project
 		- mvn eclipse:eclipse -Dwtpversion=2.0
 
-5. Import the project into Eclipse as an existing project
+- Import the project into Eclipse as an existing project
 
-6. Delete index.jsp located at src/main/webapp
+- Delete index.jsp located at src/main/webapp
 
-7. Delete web.xml located at src/main/webapp/WEB-INF
+- Delete web.xml located at src/main/webapp/WEB-INF
 
-8. Create a src/main/java source folder
+- Create a src/main/java source folder
 	- Could use the existing src/main/resource that comes with the archetype, but this is not "best practice" maven
 	
-9. Create a Bean/POJO with an @XmlRootElement class attribute
+- Create a Bean/POJO with an @XmlRootElement class attribute
 	- The @XmlRootElement tells our application how this can be serialized
 ```java
 package com.dev3l.jersey.bean;
@@ -132,7 +132,7 @@ public class DataBean {
 }
 ```
 
-10. Create an ApplicationConfig with an @ApplicationPath attribute
+- Create an ApplicationConfig with an @ApplicationPath attribute
 	- the @ApplicationPath is the root path of the web service calls
 ```java
 package com.dev3l.jersey.config;
@@ -142,7 +142,7 @@ import javax.ws.rs.core.Application;
 public class ApplicationConfig extends Application {}
 ```
 
-10. Create an Example resource with @PATH, @GET and @Produces(MediaType.APPLICATION_JSON)
+- Create an Example resource with @PATH, @GET and @Produces(MediaType.APPLICATION_JSON)
 ```java
 package com.dev3l.jersey.resource;
 import java.util.ArrayList;
@@ -178,11 +178,11 @@ public class ExampleResource {
 }
 ```
 
-11. Add the project to a java web container
+- Add the project to a java web container
 	- Default Tomcat 7.0
 
-12. Start the server
+- Start the server
 
-13. Access the endpoints via a browser URL
+- Access the endpoints via a browser URL
 	- http://localhost:8080/RESTfulJSONDev3l/resources/example
 	- http://localhost:8080/RESTfulJSONDev3l/resources/example/query
