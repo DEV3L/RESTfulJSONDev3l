@@ -13,7 +13,7 @@ Jersey JSON RESTful web service project (template)
 	- mvn clean package
 
 3. RESTfulJSONDev3l.war can be deployed to container of choice
-	- http://dev3l-charters.rhcloud.com/RESTfulJSONDev3l/resources/example
+	- http://services-dev3l.rhcloud.com/RESTfulJSONDev3l/resources/example
 		- My personal OpenShift server I deploy projects too
 
 4. Use Maven to resolve the dependencies and create eclipse dynamic web project and class/project files
