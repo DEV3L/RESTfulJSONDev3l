@@ -1,4 +1,4 @@
-package com.dev3l.jersey.resource;
+package com.dev3l.rest.resource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.dev3l.jersey.bean.DataBean;
+import com.dev3l.rest.bean.DataBean;
 
 @Path("example")
 public class ExampleResource {

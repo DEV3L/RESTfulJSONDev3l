@@ -1,4 +1,4 @@
-package com.dev3l.jersey.bean;
+package com.dev3l.rest.bean;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
